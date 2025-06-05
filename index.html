@@ -61,7 +61,7 @@
     </div>
     <div class="nav-background"></div>
 
-    <section class="container-fluid hero">
+    <section class="container-fluid hero fade-section">
       <div id="particles-js"></div>
       <div class="shadow">
         <h1 class="welcome mb-2 mb-md-3 mb-lg-4">Welcome to</h1>
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="container-fluid about text-center mt-96" id="about">
+    <section class="container-fluid about text-center mt-96 fade-section" id="about">
       <h6 class="all-headings">About our Company</h6>
       <p class="heading-intro mb-lg-5">
         Swavey is a tech company offering cutting-edge solutions in computer-related services.
@@ -172,7 +172,7 @@
       </p>
     </section>
 
-    <section class="container-fluid testimonial text-center" id="testimonial">
+    <section class="container-fluid testimonial text-center fade-section" id="testimonial">
       <h6 class="all-headings">Testimonial</h6>
       <p class="heading-intro mb-lg-5">
         What Our Happy Users Say
@@ -349,7 +349,7 @@
       </div>
     </section>
 
-    <section class="container-fluid services text-center" id="services">
+    <section class="container-fluid services text-center fade-section" id="services">
       <h6 class="all-headings">Our Awesome Services</h6>
       <p class="heading-intro mb-lg-5">
         A wide range of Tech services for You
@@ -501,7 +501,7 @@
       </div>
     </section>
 
-    <section class="container-fluid contact text-center" id="contact">
+    <section class="container-fluid contact text-center fade-section" id="contact">
       <h6 class="all-headings">Contact</h6>
       <p class="heading-intro mb-lg-5">
         Whether you have a question, need support, or want to start a project, feel free to reach out. Our team is ready to assist you.
@@ -572,7 +572,7 @@
       </div>
     </section>
 
-    <footer class="fade-section col-12">
+    <footer class="fade-section col-12 fade-section">
       <div class="footer-div row">
         <div class="logo-and-motto col-12 col-lg-4 col-md-6">
           <a class=" logo swavey-logo" aria-label="Logo" href="index.html">SWAVEY</a>
@@ -672,6 +672,26 @@
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 }
         }
+      });
+    </script>
+
+    <script>
+      const sections = document.querySelectorAll('.fade-section');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
       });
     </script>
 

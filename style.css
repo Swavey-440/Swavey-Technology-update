@@ -1145,10 +1145,10 @@ footer {
   }
 
   .shadow .swavey {
-    font-size: 38px;
+    font-size: 32px;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 45px;
     margin-top: 20px;
   }
 
@@ -1408,7 +1408,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px), (min-device-width: 768px) {
   /* Menu Toggle Button */
   .menu {
     display: none;
