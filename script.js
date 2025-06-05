@@ -39,3 +39,49 @@ function type() {
   setTimeout(type, isDeleting ? eraseSpeed : speed);
 }
 type();
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const closeIcon = document.getElementById('close-icon');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const navDrawer = document.getElementById('nav-drawer');
+const navLinks = document.querySelectorAll('#nav-links');
+const navBackground = document.querySelector('.nav-background');
+
+// Initial state
+hamburgerIcon.classList.add('active');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = hamburgerIcon.classList.contains('active');
+
+  if (isOpen) {
+    // Open the menu
+    hamburgerIcon.classList.remove('active');
+    closeIcon.classList.add('active');
+    navDrawer.classList.add('show');
+    navBackground.style.display = 'block';
+  } else {
+    // Close the menu
+    closeIcon.classList.remove('active');
+    hamburgerIcon.classList.add('active');
+    navDrawer.classList.remove('show');
+    navBackground.style.display = 'none';
+  }
+});
+
+// Close when nav item is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeIcon.classList.remove('active');
+    hamburgerIcon.classList.add('active');
+    navDrawer.classList.remove('show');
+    navBackground.style.display = 'none';
+  });
+});
+
+navBackground.addEventListener('click', () => {
+  closeIcon.classList.remove('active');
+  hamburgerIcon.classList.add('active');
+  navDrawer.classList.remove('show');
+  navBackground.style.display = 'none';
+})

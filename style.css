@@ -94,6 +94,51 @@ footer h3 {
   color: blue;
 }
 
+.nav-background {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  transition: .3s;
+  display: none;
+}
+
+.toogled-nav {
+  background-color: white;
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  bottom: 0;
+  width: 250px;
+  z-index: 10;
+  transition: .3s;
+  padding-top: 20px;
+}
+
+.toogled-nav .nav-div {
+  align-items: center;
+  display: flex;
+  column-gap: 30px;
+  cursor: pointer;
+  padding: 10px 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.toogled-nav .nav-div i {
+  font-size: 14px;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toogled-nav .nav-div:hover {
+  background-color: rgb(235, 222, 222);
+}
+
 .hero {
   background-image: url('images/bg2.jpg');
   background-position: center;
@@ -1319,5 +1364,58 @@ footer {
   .copy-right {
     font-size: 12px;
     padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Menu Toggle Button */
+  .menu {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    z-index: 999;
+  }
+
+  .menu i {
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.5) rotate(0deg);
+    pointer-events: none;
+  }
+
+  .menu i.active {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+    pointer-events: auto;
+  }
+
+  /* Side Drawer Menu */
+  .nav-drawer {
+    position: fixed;
+    top: 50px;
+    right: -250px;
+    transition: right 0.4s ease;
+    z-index: 998;
+  }
+
+  .nav-drawer.show {
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Menu Toggle Button */
+  .menu {
+    display: none;
+  }
+
+  /* Side Drawer Menu */
+  .nav-drawer {
+    display: none;
   }
 }
