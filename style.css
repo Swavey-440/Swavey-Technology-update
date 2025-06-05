@@ -1,0 +1,1323 @@
+*, p, input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+h6 {
+  color: blue;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h5 {
+  color: blue;
+  font-weight: bold;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.all-headings {
+  font-size: 18px;
+}
+
+.heading-intro {
+  font-weight: bold;
+  width: 500px;
+  margin: auto;
+  line-height: 30px;
+}
+
+.nav-bar {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 0px 240px;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  color: blue;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  column-gap: 48px;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.list .other-buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  align-self: center;
+  column-gap: 48px;
+}
+
+.lists a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav-link.active {
+  color: blue;
+}
+
+.hero {
+  background-image: url('images/bg2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  z-index: 9;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+
+.shadow {
+  height: 100%;
+  color: white;
+  padding: 104px 240px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.shadow .welcome {
+  font-size: 32px;
+}
+
+.shadow .swavey {
+  font-size: 52px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+.shadow .motto {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shadow .motto-intro {
+  width: 650px;
+  margin-bottom: 64px;
+  color: #e9d4d4;
+}
+
+.shadow .typewriter-container {
+  font-size: 18px;
+  height: 18px;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 40px;
+}
+
+.about {
+  padding: 96px 240px;
+  background-color: #F3F4F6;
+}
+
+.about .heading-intro {
+  font-size: 24px;
+}
+
+.about .text {
+  color: #5a5d61;
+  line-height: 25px;
+}
+
+.about-first-image {
+  background-image: url('images/team.jpg');
+}
+
+.about-second-image  {
+  background-image: url('images/customer-service.jpg');
+}
+
+.about-first-image, 
+.about-second-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  border-radius: 8px;
+  top: 0;
+}
+
+.about-second-image .service-writeup {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: fit-content;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.why-choose-us .ab-us {
+  display: flex;
+  align-items: start;
+}
+
+.why-choose-us .ab-us p {
+  margin-top: -4px;
+}
+
+.all-ratings {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.all-ratings .rating {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border-radius: 20px;
+  border-bottom: 3px solid blue;
+}
+
+.all-ratings .rating p {
+  color: blue;
+  font-family: 'Gloock', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about .why-choose-us-last-intro {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.testimonial {
+  padding: 96px 240px 64px;
+}
+
+.testimonial .swiper-slide {
+  position: relative;
+  text-align: left;
+}
+
+.testimonial .card {
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial .quote-icon {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  margin: auto;
+  padding: auto;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  align-content: center;
+  text-align: center;
+}
+
+.testimonial .card-body .star {
+  color: blue;
+}
+
+.testimonial .card-text {
+  color: gray;
+}
+
+.testimonial .card-title {
+  display: inline-block;
+}
+
+.testimonial .first-letter {
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+}
+
+.services {
+  background-image: url('images/bekky-bekks-gk-2lMtCeR8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 96px 240px;
+}
+
+.services .service-card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.services .service-card .write-up {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-content: center;
+  padding: 16px 10px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  transition: .4s;
+}
+
+.services .service-card .write-up .card-heading {
+  font-size: 20px;
+}
+
+.services .service-card .write-up .hidden-text {
+  display: none;
+}
+
+.services .service-card:hover .write-up {
+  height: 100%;
+  border-radius: 15px;
+}
+
+.services .service-card:hover .write-up .hidden-text {
+  display: block;
+}
+
+.services .website {
+  background-image: url('images/web-design.jpg');
+}
+
+.services .uxui {
+  background-image: url('images/uiux\ design.jpg');
+}
+
+.services .graphics {
+  background-image: url('images/graphics.jpg');
+}
+
+.services .cctv {
+  background-image: url('images/cctv1.jpg');
+}
+
+.services .typesetting {
+  background-image: url('images/typing.jpg');
+}
+
+.services .support {
+  background-image: url('images/customer-service.jpg');
+}
+
+.contact {
+  padding: 96px 240px;
+}
+
+.contact .address .info {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.contact .address .info i {
+  color: blue;
+  font-size: 25px;
+}
+
+.contact .address iframe {
+  height: 250px;
+  border-radius: 15px;
+}
+
+.contact .get-in {
+  font-size: 20px;
+}
+
+.contact .address .head {
+  font-weight: 600;
+}
+
+.contact .form .label {
+  font-size: 14px;
+} 
+
+.contact .form .input {
+  width: 100%;
+}
+
+.contact .form textarea {
+  height: 150px;
+}
+
+.contact .form .inp {
+  padding: 12px 20px;
+  border: 1px solid rgb(221, 210, 210);
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.contact .form .inp::placeholder {
+  color: rgb(197, 180, 180);
+}
+
+.submit {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .20s;
+}
+
+.submit:hover {
+  background-color: rgba(0, 0, 255, .6);
+}
+
+footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  height: fit-content;
+}
+
+.footer-div {
+  width: 100%;
+  padding: 50px 240px 40px;
+  text-align: left;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+.footer-div .navigation .links {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+  transition: .25s;
+}
+
+.footer-div .navigation .links:hover {
+  text-decoration: underline;
+}
+
+.footer-div .socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-div .socials i {
+  color: white;
+  transition: .25s;
+}
+
+.footer-div .socials i:hover {
+  color: blue;
+}
+
+.footer-div .get-in-touch div {
+  display: flex;
+  column-gap: 16px;
+  margin-bottom: 4px;
+}
+
+.copy-right {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 992px) and (max-width: 1400px), (min-device-width: 992px) and (max-device-width: 1400px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+  }
+
+  .nav-bar {
+    padding: 0px 120px;
+  }
+
+  .hero {
+    background-image: url('images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    z-index: 9;
+  }
+
+  .shadow {
+    height: 100%;
+    color: white;
+    padding: 74px 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .about {
+    padding: 96px 120px;
+    background-color: #F3F4F6;
+  }
+
+  .testimonial {
+    padding: 96px 120px 64px;
+  }
+
+  .testimonial .swiper-slide {
+    position: relative;
+    text-align: left;
+    max-width: 280px;
+  }
+
+  .testimonial .card-body .star {
+    color: blue;
+  }
+
+  .testimonial .card-text {
+    color: gray;
+    font-size: 14px;
+  }
+
+  .testimonial .card-title {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .services {
+    background-image: url('images/bekky-bekks-gk-2lMtCeR8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 96px 120px;
+  }
+
+  .services .service-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    line-height: 18px;
+  }
+
+  .services .service-card .write-up .card-heading {
+    font-size: 17px;
+  }
+
+  .contact {
+    padding: 96px 120px;
+  }
+
+  .contact .address .info {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    height: 170px;
+    cursor: pointer;
+  }
+
+  .footer-div {
+    width: 100%;
+    padding: 50px 120px 40px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px), (min-device-width: 768px) and (max-device-width: 991px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+  }
+
+  h6 {
+    color: blue;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .all-headings {
+    font-size: 14px;
+  }
+
+  .heading-intro {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .nav-bar {
+    padding: 0px 80px;
+  }
+
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .list {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 105px;
+    column-gap: 24px;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .list .other-buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    align-self: center;
+    column-gap: 40px;
+  }
+
+  .hero {
+    background-image: url('images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 9;
+  }
+
+  .shadow {
+    height: 100%;
+    color: white;
+    padding: 74px 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .shadow .welcome {
+    font-size: 24px;
+  }
+
+  .shadow .swavey {
+    font-size: 48px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+  }
+
+  .shadow .motto {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .shadow .motto-intro {
+    width: 550px;
+    margin-bottom: 56px;
+    color: #e9d4d4;
+  }
+
+  .shadow .typewriter-container {
+    font-size: 18px;
+    height: 18px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .about {
+    padding: 64px 80px;
+    background-color: #F3F4F6;
+  }
+
+  .about .heading-intro {
+    font-size: 20px;
+  }
+
+  .all-ratings {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  .all-ratings .rating p {
+    color: blue;
+    font-family: 'Gloock', serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .testimonial {
+    padding: 64px 80px;
+  }
+
+  .testimonial .swiper-slide {
+    position: relative;
+    text-align: left;
+    max-width: 280px;
+  }
+
+  .services {
+    background-image: url('images/bekky-bekks-gk-2lMtCeR8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 64px 80px;
+  }
+
+  .services .service-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+  }
+
+  .services .service-card .write-up .card-heading {
+    font-size: 17px;
+  }
+
+  .contact {
+    padding: 64px 80px;
+  }
+
+  .contact .address .info {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    height: 160px;
+    cursor: pointer;
+  }
+
+  .contact .address iframe {
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+
+  footer .get-in-touch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin-top: 35px;
+    justify-content: space-between;
+  }
+
+  footer .get-in-touch h3 {
+    display: none;
+  }
+
+  footer .get-in-touch .phone-div {
+    margin-left: 20px;
+  }
+
+  .footer-div {
+    width: 100%;
+    padding: 50px 80px 40px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px), (min-device-width: 576px) and (max-device-width: 767px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+  }
+
+  h6 {
+    color: blue;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .all-headings {
+    font-size: 14px;
+  }
+
+  .heading-intro {
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 24px;
+    width: 400px;
+  }
+
+  .nav-bar {
+    padding: 0px 60px;
+  }
+
+  .nav-bar .list {
+    display: none;
+  }
+
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .hero {
+    background-image: url('images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 9;
+  }
+
+  .shadow {
+    height: 100%;
+    color: white;
+    padding: 68px 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .shadow .welcome {
+    font-size: 20px;
+  }
+
+  .shadow .swavey {
+    font-size: 34px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    line-height: 56px;
+    margin-top: 20px;
+  }
+
+  .shadow .motto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .shadow .motto-intro {
+    width: 400px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: #e9d4d4;
+  }
+
+  .shadow .typewriter-container {
+    font-size: 18px;
+    height: 18px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .about {
+    padding: 64px 60px;
+    background-color: #F3F4F6;
+  }
+
+  .about .heading-intro {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .why-choose-us {
+    margin-top: 24px;
+  }
+
+  .about-second-image {
+    margin-top: 24px;
+  }
+
+  .all-ratings {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+
+  .all-ratings .rating {
+    width: 100%;
+  }
+
+  .all-ratings .rating p {
+    color: blue;
+    font-family: 'Gloock', serif;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .testimonial {
+    padding: 64px 20px;
+  }
+
+  .testimonial .swiper-slide {
+    position: relative;
+    text-align: left;
+    max-width: 270px;
+  }
+
+  .services {
+    background-image: url('images/bekky-bekks-gk-2lMtCeR8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 64px 60px;
+  }
+
+  .services .service-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+  }
+
+  .services .service-card .write-up .card-heading {
+    font-size: 18px;
+  }
+
+  .services .service-card .write-up {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-content: center;
+    padding: 16px 32px 10px 32px;
+    border-radius: 0px 0px 10px 10px;
+    transition: .4s;
+  }
+
+  .contact {
+    padding: 64px 60px;
+  }
+
+  .contact .address .info {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    height: 140px;
+    cursor: pointer;
+  }
+
+  .contact .address iframe {
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+
+  .footer-div {
+    width: 100%;
+    padding: 50px 60px 40px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  footer .footer-div .navigation {
+    margin-top: 24px;
+  }
+
+  footer .footer-div .work-hours {
+    margin-top: 24px;
+  }
+
+  footer .footer-div .work-hours .socials {
+    width: 200px;
+    margin: auto;
+  }
+
+  footer .get-in-touch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+    justify-items: center;
+  }
+
+  footer .get-in-touch h3 {
+    display: block;
+  }  
+}
+
+@media (max-width: 575px), (max-device-width: 575px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: relative;
+  }
+
+  h6 {
+    color: blue;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .all-headings {
+    font-size: 12px;
+  }
+
+  .heading-intro {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    width: 250px;
+  }
+
+  .nav-bar {
+    padding: 0px 24px;
+    height: 56px;
+  }
+
+  .nav-bar .list {
+    display: none;
+  }
+
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .hero {
+    background-image: url('images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 9;
+  }
+
+  .shadow {
+    height: 100%;
+    color: white;
+    padding: 52px 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .shadow .welcome {
+    font-size: 16px;
+  }
+
+  .shadow .swavey {
+    font-size: 38px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  .shadow .motto {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .shadow .motto-intro {
+    width: 280px;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    color: #e9d4d4;
+  }
+
+  .shadow .typewriter-container {
+    font-size: 16px;
+    height: 18px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 48px;
+  }
+
+  .about {
+    padding: 64px 24px;
+    background-color: #F3F4F6;
+  }
+
+  .about .heading-intro {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .why-choose-us {
+    margin-top: 24px;
+  }
+
+  .about-second-image {
+    margin-top: 24px;
+  }
+
+  .all-ratings {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+
+  .all-ratings .rating {
+    width: 100%;
+  }
+
+  .all-ratings .rating p {
+    color: blue;
+    font-family: 'Gloock', serif;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .testimonial {
+    padding: 64px 20px;
+  }
+
+  .testimonial .swiper-slide {
+    position: relative;
+    text-align: left;
+    max-width: 270px;
+  }
+
+  .testimonial .card-title {
+    font-size: 14px;
+  }
+
+  .services {
+    background-image: url('images/bekky-bekks-gk-2lMtCeR8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 64px 24px;
+  }
+
+  .services .service-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+  }
+
+  .services .service-card .write-up .card-heading {
+    font-size: 16.5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .services .service-card .write-up {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-content: center;
+    padding: 16px 32px 10px 32px;
+    border-radius: 0px 0px 10px 10px;
+    transition: .4s;
+  }
+
+  .contact {
+    padding: 64px 24px;
+  }
+
+  .contact .address .info {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    height: 140px;
+    cursor: pointer;
+  }
+
+  .contact .address iframe {
+    height: 240px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+
+  .contact .get-in {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact .form .label {
+    font-size: 12px;
+  } 
+
+  .contact .form textarea {
+    height: 120px;
+  }
+
+  .contact .form .inp {
+    padding: 8px 16px;
+    border: 1px solid rgb(221, 210, 210);
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: -8px;
+  }
+
+  .contact .form .inp::placeholder {
+    color: rgb(197, 180, 180);
+  }
+
+  .submit {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .20s;
+  }
+
+  .footer-div {
+    width: 100%;
+    padding: 50px 24px 40px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  footer .footer-div .navigation {
+    margin-top: 24px;
+  }
+
+  footer .footer-div .work-hours {
+    margin-top: 24px;
+  }
+
+  footer .footer-div .work-hours .socials {
+    width: 200px;
+    margin: auto;
+  }
+
+  footer .get-in-touch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+    justify-items: center;
+  }
+
+  footer .get-in-touch h3 {
+    display: block;
+  } 
+
+  .footer-div .get-in-touch div {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 4px;
+  }
+
+  .footer-div .get-in-touch div i {
+    display: none;
+  }
+  
+  .copy-right {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+}
