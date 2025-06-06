@@ -567,22 +567,22 @@
         <div class="col-12 col-md-12 col-lg-6">
           <div class="form">
             <h5 class="mb-4 get-in">Get in touch with us today for your tech projects</h5>
-            <form action="" class="forms">
+            <form action="" class="forms" id="contact-form">
               <div class="name mb-4 label">
                 <p for="name">Name *</p>
-                <input type="text" placeholder="Your name" class="inp col-12">
+                <input type="text" placeholder="Your name" class="inp col-12" name="name" required>
               </div>
               <div class="email mb-4 label">
                 <p for="email">Email *</p>
-                <input type="email" placeholder="peterjames@gmail.com" class="inp col-12">
+                <input type="email" placeholder="peterjames@gmail.com" class="inp col-12"  name="email" required>
               </div>
               <div class="tel mb-4 label">
                 <p for="tel">Phone number</p>
-                <input type="tel" placeholder="Phone number" class="inp col-12">
+                <input type="tel" placeholder="Phone number" class="inp col-12" name="tel">
               </div>
               <div class="subject mb-4 label">
                 <p for="subject">Message *</p>
-                <textarea name="subject" id="subject" placeholder="Your message ..." class="inp subject col-12"></textarea>
+                <textarea name="subject" id="subject" placeholder="Your message ..." class="inp subject col-12" required></textarea>
               </div>
               
               <button type="submit" class="submit col-12">Send Message</button>
@@ -716,5 +716,31 @@
     </script>
 
     <script src="script.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init("UnjKMLv_KyNc5uh0j");
+
+      document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const form = this;
+
+        // Send to you
+        emailjs.sendForm("service_cn2aoyr", "template_4ttypcl", form)
+          .then(() => {
+            // Then auto-reply to the user
+            return emailjs.sendForm("service_cn2aoyr", "template_6neb4s8", form);
+          })
+          .then(() => {
+            alert("Message sent and confirmation sent to user!");
+          })
+          .catch((error) => {
+            alert("Error: " + error.text);
+          });
+      });
+    </script>
+
   </body>
 </html>
