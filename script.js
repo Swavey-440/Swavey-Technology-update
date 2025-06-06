@@ -85,3 +85,9 @@ navBackground.addEventListener('click', () => {
   navDrawer.classList.remove('show');
   navBackground.style.display = 'none';
 })
+
+document.querySelector('.submit').addEventListener('click' => {
+  document.querySelector('.inp').forEach(element => {
+    element.innerHTML = "";
+  });
+})
