@@ -203,6 +203,15 @@ footer h3 {
 .about .heading-intro {
   font-size: 24px;
 }
+.testimonial .heading-intro {
+  font-size: 24px;
+}
+.services .heading-intro {
+  font-size: 24px;
+}
+.contact .heading-intro {
+  font-size: 24px;
+}
 
 .about .text {
   color: #5a5d61;
@@ -660,9 +669,17 @@ footer {
     font-size: 14px;
   }
 
-  .heading-intro {
+  .about .heading-intro {
     font-size: 20px;
-    margin-bottom: 30px;
+  }
+  .testimonial .heading-intro {
+    font-size: 20px;
+  }
+  .services .heading-intro {
+    font-size: 20px;
+  }
+  .contact .heading-intro {
+    font-size: 20px;
   }
 
   .nav-bar {
@@ -749,10 +766,6 @@ footer {
   .about {
     padding: 64px 80px;
     background-color: #F3F4F6;
-  }
-
-  .about .heading-intro {
-    font-size: 20px;
   }
 
   .all-ratings {
@@ -867,12 +880,30 @@ footer {
     font-size: 14px;
   }
 
-  .heading-intro {
-    font-size: 18px;
-    margin-bottom: 24px;
-    line-height: 24px;
-    width: 400px;
-  }
+   .about .heading-intro {
+      font-size: 18px;
+      margin-bottom: 24px;
+      line-height: 24px;
+      width: 400px;
+    }
+    .testimonial .heading-intro {
+      font-size: 18px;
+      margin-bottom: 24px;
+      line-height: 24px;
+      width: 400px;
+    }
+    .services .heading-intro {
+      font-size: 18px;
+      margin-bottom: 24px;
+      line-height: 24px;
+      width: 400px;
+    }
+    .contact .heading-intro {
+      font-size: 18px;
+      margin-bottom: 24px;
+      line-height: 24px;
+      width: 400px;
+    }
 
   .nav-bar {
     padding: 0px 60px;
@@ -948,11 +979,6 @@ footer {
   .about {
     padding: 64px 60px;
     background-color: #F3F4F6;
-  }
-
-  .about .heading-intro {
-    font-size: 18px;
-    line-height: 24px;
   }
 
   .why-choose-us {
@@ -1102,7 +1128,25 @@ footer {
     font-size: 12px;
   }
 
-  .heading-intro {
+  .about .heading-intro {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .testimonial .heading-intro {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .services .heading-intro {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .contact .heading-intro {
     font-size: 16px;
     margin-bottom: 24px;
     line-height: 20px;
@@ -1184,11 +1228,6 @@ footer {
   .about {
     padding: 64px 24px;
     background-color: #F3F4F6;
-  }
-
-  .about .heading-intro {
-    font-size: 18px;
-    line-height: 24px;
   }
 
   .why-choose-us {

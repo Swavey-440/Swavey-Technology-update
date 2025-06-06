@@ -750,39 +750,5 @@
           });
       });
     </script>
-
-
-<!--
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      emailjs.init("UnjKMLv_KyNc5uh0j");
-
-      document.getElementById("contact-form").addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const form = this;
-
-        // Send to you
-        emailjs.sendForm("service_cn2aoyr", "template_4ttypcl", form)
-          .then(() => {
-            // Then auto-reply to the user
-            return emailjs.sendForm("service_cn2aoyr", "template_6neb4s8", form);
-          })
-          .then(() => {
-            document.getElementById("form-message").innerHTML = "Message sent Successfully!"
-            setTimeout(() => {
-              document.getElementById("form-message").innerHTML = "";
-            }, 3000);
-            form.reset();
-          })
-          .catch((error) => {
-            document.getElementById("form-message").style.color = "red";
-            setTimeout(() => {
-              document.getElementById("form-message").innerHTML = "Failed to send message.";
-            }, 3000);
-          });
-      });
-    </script>
--->
   </body>
 </html>
