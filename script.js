@@ -87,7 +87,7 @@ navBackground.addEventListener('click', () => {
 })
 
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+document.getElementById("submit").addEventListener("click", function(e) {
   e.preventDefault();
 
   // Get input elements
