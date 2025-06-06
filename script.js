@@ -86,6 +86,6 @@ navBackground.addEventListener('click', () => {
   navBackground.style.display = 'none';
 })
 
-document.querySelector('.submit').addEventListener('click' => {
-  document.querySelector('.inp').element.innerHTML = "";
+document.querySelector('.submit').addEventListener('click', () => {
+  document.querySelector('.subject').element.innerHTML = "";
 })
