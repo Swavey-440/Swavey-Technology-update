@@ -86,9 +86,25 @@ navBackground.addEventListener('click', () => {
   navBackground.style.display = 'none';
 })
 
-document.querySelector('.submit').addEventListener('click', () => {
-  document.querySelector('.name').value = "";
-  document.querySelector('.email').value = "";
-  document.querySelector('.tel').value = "";
-  document.querySelector('.subject').value = "";
-})
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Get input elements
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const number = document.getElementById("tel");
+  const messageInput = document.getElementById("subject");
+
+  // You can handle the data here (e.g., send it somewhere)
+  console.log("Name:", nameInput.value);
+  console.log("Email:", emailInput.value);
+  console.log("Number:", number.value);
+  console.log("Message:", messageInput.value);
+
+  // Clear the fields
+  nameInput.value = "";
+  emailInput.value = "";
+  number.value = "";
+  messageInput.value = "";
+});
