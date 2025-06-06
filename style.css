@@ -1114,7 +1114,7 @@ footer {
     color: blue;
     cursor: pointer;
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 4.5px;
     font-weight: bold;
     text-decoration: none;
   }
@@ -1149,7 +1149,7 @@ footer {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     line-height: 45px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   .shadow .motto {
