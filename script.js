@@ -85,26 +85,3 @@ navBackground.addEventListener('click', () => {
   navDrawer.classList.remove('show');
   navBackground.style.display = 'none';
 })
-
-
-document.getElementById("submit").addEventListener("click", function(e) {
-  e.preventDefault();
-
-  // Get input elements
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const number = document.getElementById("tel");
-  const messageInput = document.getElementById("subject");
-
-  // You can handle the data here (e.g., send it somewhere)
-  console.log("Name:", nameInput.value);
-  console.log("Email:", emailInput.value);
-  console.log("Number:", number.value);
-  console.log("Message:", messageInput.value);
-
-  // Clear the fields
-  nameInput.value = "";
-  emailInput.value = "";
-  number.value = "";
-  messageInput.value = "";
-});

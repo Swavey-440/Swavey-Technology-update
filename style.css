@@ -443,6 +443,7 @@ footer h3 {
 
 .contact .form textarea {
   height: 150px;
+  resize: none;
 }
 
 .contact .form .inp {
@@ -469,6 +470,14 @@ footer h3 {
 
 .submit:hover {
   background-color: rgba(0, 0, 255, .6);
+}
+
+.form-message {
+  margin-top: 10px;
+  color: green;
+  height: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 footer {

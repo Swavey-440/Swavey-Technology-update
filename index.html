@@ -586,6 +586,7 @@
               </div>
               
               <button type="submit" class="submit col-12" id="submit">Send Message</button>
+              <div id="form-message" class="form-message"></div>
             </form>
           </div>
         </div>
@@ -718,6 +719,40 @@
     <script src="script.js"></script>
 
     <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+      emailjs.init("UnjKMLv_KyNc5uh0j");
+
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Send to you
+        emailjs.sendForm("service_cn2aoyr", "template_4ttypcl", this)
+          .then(() => {
+            // Then auto-reply to user
+            return emailjs.sendForm("service_cn2aoyr", "template_6neb4s8", this);
+          })
+          .then(() => {
+            document.getElementById("form-message").innerHTML = "Message sent Successfully!"
+            setTimeout(() => {
+              document.getElementById("form-message").innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => {
+            document.getElementById("form-message").style.color = "red";
+            setTimeout(() => {
+              document.getElementById("form-message").innerHTML = "Failed to send message.";
+            }, 3000);
+          });
+      });
+    </script>
+
+
+<!--
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
       emailjs.init("UnjKMLv_KyNc5uh0j");
@@ -734,13 +769,20 @@
             return emailjs.sendForm("service_cn2aoyr", "template_6neb4s8", form);
           })
           .then(() => {
-            alert("Message sent and confirmation sent to user!");
+            document.getElementById("form-message").innerHTML = "Message sent Successfully!"
+            setTimeout(() => {
+              document.getElementById("form-message").innerHTML = "";
+            }, 3000);
+            form.reset();
           })
           .catch((error) => {
-            alert("Error: " + error.text);
+            document.getElementById("form-message").style.color = "red";
+            setTimeout(() => {
+              document.getElementById("form-message").innerHTML = "Failed to send message.";
+            }, 3000);
           });
       });
     </script>
-
+-->
   </body>
 </html>
