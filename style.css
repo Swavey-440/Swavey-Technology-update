@@ -318,6 +318,7 @@ footer h3 {
 
 .testimonial .card-text {
   color: gray;
+  height: 85px;
 }
 
 .testimonial .card-title {
